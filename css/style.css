@@ -1,0 +1,46 @@
+.slider h3,
+.slider h5,
+.toko h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.brand-logo img {
+    max-width: 48px;
+    max-height: 48px;
+    margin: 5px auto;
+}
+
+.about img {
+    width: 130px;
+    height: 130px;
+    margin: 6px auto;
+}
+
+.about h5 {
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.parallax-container {
+    height: 20%;
+}
+
+.parallax img {
+    filter: drop-shadow(6);
+    opacity: 0.6 !important;
+}
+
+.toko img {
+    max-width: 150px;
+    max-height: 100px;
+    margin: 2px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+}
+
+.katalog img {
+    margin: 20px auto;
+}
+
+section, footer {
+    padding: 2px 0;
+}
