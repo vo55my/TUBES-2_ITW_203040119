@@ -4,6 +4,16 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.slider h3,
+.about h3,
+.toko h3,
+.edition h3,
+.katalog h3,
+.contact h3,
+footer p {
+    font-weight: 600;
+}
+
 .brand-logo img {
     max-width: 48px;
     max-height: 48px;
@@ -42,5 +52,22 @@
 }
 
 section, footer {
-    padding: 2px 0;
+    padding: 1px 0;
+}
+
+.input-field label {
+    color: maroon;
+}
+
+.input-field input[type=text]:focus + label {
+    color: maroon;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid maroon;
+    box-shadow: 0 1px 0 0 maroon;
+}
+
+.input-field .prefix.active {
+    color: maroon;
 }

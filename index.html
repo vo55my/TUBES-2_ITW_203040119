@@ -3,6 +3,7 @@
     <head>
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
@@ -19,20 +20,20 @@
         <title>MyCloth Indonesia</title>
     </head>
     
-    <body id="home" class="scrollspy">
+    <body id="home" class="home scrollspy">
         <!-- navbar -->
         <div class="navbar-fixed">
             <nav class="black darken-2">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="#home" class="brand-logo"><img src="assets/img/Slide/Profil.png"></a>
-                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <ul class="red-text text-darken-1 right hide-on-med-and-down">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#toko">Shop</a></li>
-                        <li><a href="#edition">Edition</a></li>
-                        <li><a href="#katalog">Katalog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <a href="#home" class="brand-logo scrollspy"><img src="assets/img/Slide/Profil.png" class="scrollspy"></a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
+                        <ul class="red-text text-darken-2 right hide-on-med-and-down">
+                        <li><a href="#about" class="hoverable">About</a></li>
+                        <li><a href="#toko" class="hoverable">Store</a></li>
+                        <li><a href="#edition" class="hoverable">Edition</a></li>
+                        <li><a href="#katalog" class="hoverable">Katalog</a></li>
+                        <li><a href="#contact" class="hoverable">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +43,7 @@
         <!-- sidenav -->
         <ul class="sidenav" id="mobile-nav">
             <li><a href="#about">About</a></li>
-            <li><a href="#toko">Shop</a></li>
+            <li><a href="#toko">Store</a></li>
             <li><a href="#edition">Edition</a></li>
             <li><a href="#katalog">Katalog</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -78,7 +79,7 @@
                     <div class="col m4 s4 light right-align">
                         <img src="assets/img/Slide/Profil.png">
                     </div>
-                    <div class="col m5 s8 light left-align">
+                    <div class="col m5 s8 light vertical-align">
                         <h5 class="red-text text-darken-2">Perkenalkan, MyCloth Indonesia</h5>
                         <p>MyCloth Indonesia adalah brand clothing asal jakarta yang berdiri tahun 2020 dan kini sudah mencapai pasar indonesia karena bahan yang bagus dan desain yang sesuai dengan trend masa kini.</p>
                     </div>
@@ -202,7 +203,7 @@
                 <div class="row">
                     <div class="col m5 s12">
                         <ul class="collection with-header">
-                            <li class="collection-header"><h4>Official Store</h4></li>
+                            <li class="collection-header"><h4 class="center-align">Official Store</h4></li>
                             <li class="collection-item">MyCloth Indonesia</li>
                             <li class="collection-item">Perum Bukit Panorama Indah Blok D2 No. 23 Kel. Ciseureuh Kec. Purwakarta Kab. Purwakarta</li>
                             <li class="collection-item">Jawa Barat, Indonesia</li>
@@ -212,24 +213,28 @@
                     <div class="col m7 s12">
                         <form>
                             <div class="card-panel">
-                                <h5>Silahkan isi Formulir dibawah ini</h5>
+                                <h5>Silahkan isi formulir dibawah ini</h5>
                                 <div class="input-field">
-                                    <input type="text" name="name" id="name" required class="validate">
-                                    <label for="name">Nama</label>
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input type="text" name="name" id="icon_prefix" required class="validate">
+                                    <label for="icon_prefix">Nama</label>
                                 </div>
                                 <div class="input-field">
-                                    <input type="email" name="email" id="email" class="validate">
-                                    <label for="email">Email</label>
+                                    <i class="material-icons prefix">email</i>
+                                    <input type="email" name="email" id="icon_prefix" class="validate">
+                                    <label for="icon_prefix">Email</label>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text" name="phone" id="phone">
-                                    <label for="phone">No. Telp</label>
+                                    <i class="material-icons prefix">phone</i>
+                                    <input type="text" name="phone" id="icon_prefix">
+                                    <label for="icon_prefix">No. Telp</label>
                                 </div>
                                 <div class="input-field">
-                                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
-                                    <label for="message">Pesan</label>
+                                    <i class="material-icons prefix">message</i>
+                                    <textarea name="message" id="icon_prefix" class="materialize-textarea"></textarea>
+                                    <label for="icon_prefix">Pesan</label>
                                 </div>
-                                <button type="submit" class="btn red darken-2 hoverable">Kirim</button>
+                                <button type="submit" class="btn waves-effect waves-light red darken-2 hoverable">Kirim<i class="material-icons right">send</i></button>
                             </div>
                         </form>
                     </div>
@@ -238,7 +243,7 @@
         </section>
 
         <!-- footer -->
-        <footer class="red darken-2 white-text center">
+        <footer class="red darken-2 white-text center-align">
             <p class="flow-text">©MyCloth Indonesia, 2020</p>
         </footer>
 
